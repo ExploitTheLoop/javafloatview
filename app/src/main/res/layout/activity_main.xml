@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:padding="20dp"
+		android:background="#FF000000"
+		android:gravity="center_horizontal">
+        <TextView
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:text="ABENK"/>
+        <TextView
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textColor="#ffffff"
+            android:text="BENKKSTUDIO"/>
+      
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+			android:layout_height="20dp"/>
+        
+		<LinearLayout
+			android:orientation="horizontal"
+            android:gravity="center"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+
+		<Button
+			android:onClick="onClick"
+			android:layout_width="180dp"
+			android:layout_height="80dp"
+			android:text="Start"
+			android:layout_gravity="center"
+			android:id="@+id/activitymainButton1"
+			android:radius="7dp"
+			android:width="9dp"
+			android:background="#FF147ED6"
+			android:textColor="#FFFFFFFF"/>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="20dp"
+			android:layout_height="fill_parent"/>
+
+		<Button
+			android:layout_width="180dp"
+			android:layout_height="80dp"
+			android:text="Stop"
+			android:width="9dp"
+			android:radius="9dp"
+			android:background="#FFFF0000"
+			android:textColor="#FFFFFFFF"
+			android:id="@+id/activitymainButton2"
+			android:onClick="StopCheat"/>
+        </LinearLayout>
+	</LinearLayout>
+
+</LinearLayout>
+

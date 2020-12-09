@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+
+	<RelativeLayout
+		android:id="@+id/ball_rel"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+
+		<LinearLayout
+			android:id="@+id/ballCardView1"
+			android:layout_width="45dp"
+			android:layout_height="45dp"
+			android:gravity="center"
+			android:layout_marginRight="5dp"
+			android:background="#00000000"
+			android:orientation="horizontal"
+			android:layout_marginTop="5dp">
+
+			<ImageView
+				android:id="@+id/ball_img"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:src="@drawable/icon"/>
+       
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/ball_lin"
+			android:layout_width="match_parent"
+			android:layout_height="280dp"
+			android:layout_below="@id/ballCardView1"
+			android:layout_marginStart="-1dp"
+			android:layout_marginTop="-40dp"
+			android:layout_toEndOf="@id/ballCardView1"
+			android:background="@drawable/xf_round"
+			android:gravity="center_horizontal"
+			android:orientation="vertical"
+			android:paddingTop="5dp"
+			android:paddingBottom="5dp"
+			android:visibility="visible"
+			tools:ignore="RtlSymmetry"
+			android:padding="5dp">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="ABENK"
+				android:textColor="#FFFFFFFF"
+				android:textSize="20sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BENKKSTUDIO"
+                android:textColor="#FFFFFFFF"
+				android:textSize="10sp"/>
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:layout_marginLeft="20dp"
+				android:layout_marginTop="5dp"
+				android:layout_marginRight="20dp"
+				android:layout_marginBottom="5dp"
+				android:background="#FFFF0000"/>
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:layout_marginBottom="5dp"
+				android:background="#FFFF0000"/>
+
+         <LinearLayout
+             android:id="@+id/ball_list"
+             android:layout_width="match_parent"
+             android:orientation="vertical"
+             android:layout_height="200dp">
+         <Switch    
+             android:id="@+id/test1"
+             android:text="Aimlock"
+             android:textColor="#ffffff"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"/>
+             <Switch    
+                 android:id="@+id/test2"
+                 android:text="Less Recoil"
+                 android:textColor="#ffffff"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"/>
+             <Switch    
+                 android:id="@+id/test3"
+                 android:text="Wide View"
+                 android:textColor="#ffffff"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"/>
+             <Switch    
+                 android:id="@+id/test4"
+                 android:text="Night Mode"
+                 android:textColor="#ffffff"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"/>
+         
+         </LinearLayout>
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:layout_marginBottom="5dp"
+				android:background="#FFFF0000"/>
+
+		</LinearLayout>
+
+	</RelativeLayout>
+
+</LinearLayout>
+
